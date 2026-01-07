@@ -1,0 +1,161 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2709
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\froman\fcharset0 Times-Roman;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue233;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c93333;}
+\margl1440\margr1440\vieww26680\viewh12680\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs32 \cf0 \expnd0\expndtw0\kerning0
+<!DOCTYPE html>\
+<html lang="es">\
+<head>\
+\pard\tx26611\pardeftab720\partightenfactor0
+\cf0 <meta charset="UTF-8">\
+\pard\pardeftab720\partightenfactor0
+\cf0 <meta name="viewport" content="width=device-width, initial-scale={\field{\*\fldinst{HYPERLINK "tel:1.0"}}{\fldrslt \cf2 \ul \ulc2 1.0}}">\
+<title>AtlansSafe - Dashboard Copiloto Inteligente</title>\
+<style>\
+\'a0 /* Reset b\'e1sico */\
+\'a0 * \{\
+\'a0\'a0\'a0 margin: 0;\
+\'a0\'a0\'a0 padding: 0;\
+\'a0\'a0\'a0 box-sizing: border-box;\
+\'a0\'a0\'a0 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;\
+\'a0 \}\
+\
+\'a0 body \{\
+\'a0\'a0\'a0 background: linear-gradient({\field{\*\fldinst{HYPERLINK "tel:135"}}{\fldrslt \cf2 \ul \ulc2 135}}deg, #6a0dad, #4a90e2);\
+\'a0\'a0\'a0 color: #fff;\
+\'a0\'a0\'a0 min-height: {\field{\*\fldinst{HYPERLINK "tel:100"}}{\fldrslt \cf2 \ul \ulc2 100}}vh;\
+\'a0\'a0\'a0 display: flex;\
+\'a0\'a0\'a0 flex-direction: column;\
+\'a0 \}\
+\
+\'a0 header \{\
+\'a0\'a0\'a0 padding: 20px 40px;\
+\'a0\'a0\'a0 display: flex;\
+\'a0\'a0\'a0 justify-content: space-between;\
+\'a0\'a0\'a0 align-items: center;\
+\'a0\'a0\'a0 background-color: rgba(0,0,0,{\field{\*\fldinst{HYPERLINK "tel:0.2"}}{\fldrslt \cf2 \ul \ulc2 0.2}});\
+\'a0\'a0\'a0 backdrop-filter: blur(10px);\
+\'a0 \}\
+\
+\'a0 header h1 \{\
+\'a0\'a0\'a0 font-size: 2rem;\
+\'a0\'a0\'a0 font-weight: bold;\
+\'a0 \}\
+\
+\'a0 nav a \{\
+\'a0\'a0\'a0 color: #fff;\
+\'a0\'a0\'a0 text-decoration: none;\
+\'a0\'a0\'a0 margin-left: 20px;\
+\'a0\'a0\'a0 font-weight: {\field{\*\fldinst{HYPERLINK "tel:500"}}{\fldrslt \cf2 \ul \ulc2 500}};\
+\'a0\'a0\'a0 transition: color {\field{\*\fldinst{HYPERLINK "tel:0.3"}}{\fldrslt \cf2 \ul \ulc2 0.3}}s;\
+\'a0 \}\
+\
+\'a0 nav a:hover \{\
+\'a0\'a0\'a0 color: #ffd{\field{\*\fldinst{HYPERLINK "tel:700"}}{\fldrslt \cf2 \ul \ulc2 700}};\
+\'a0 \}\
+\
+\'a0 .dashboard \{\
+\'a0\'a0\'a0 flex: 1;\
+\'a0\'a0\'a0 display: grid;\
+\'a0\'a0\'a0 grid-template-columns: repeat(auto-fit, minmax({\field{\*\fldinst{HYPERLINK "tel:280"}}{\fldrslt \cf2 \ul \ulc2 280}}px, 1fr));\
+\'a0\'a0\'a0 gap: 30px;\
+\'a0\'a0\'a0 padding: 40px;\
+\'a0 \}\
+\
+\'a0 .card \{\
+\'a0\'a0\'a0 background-color: rgba({\field{\*\fldinst{HYPERLINK "tel:255"}}{\fldrslt \cf2 \ul \ulc2 255}},{\field{\*\fldinst{HYPERLINK "tel:255"}}{\fldrslt \cf2 \ul \ulc2 255}},{\field{\*\fldinst{HYPERLINK "tel:255"}}{\fldrslt \cf2 \ul \ulc2 255}},{\field{\*\fldinst{HYPERLINK "tel:0.1"}}{\fldrslt \cf2 \ul \ulc2 0.1}});\
+\'a0\'a0\'a0 backdrop-filter: blur(8px);\
+\'a0\'a0\'a0 padding: 30px;\
+\'a0\'a0\'a0 border-radius: 20px;\
+\'a0\'a0\'a0 transition: transform {\field{\*\fldinst{HYPERLINK "tel:0.3"}}{\fldrslt \cf2 \ul \ulc2 0.3}}s;\
+\'a0 \}\
+\
+\'a0 .card:hover \{\
+\'a0\'a0\'a0 transform: translateY(-10px);\
+\'a0 \}\
+\
+\'a0 .card h2 \{\
+\'a0\'a0\'a0 margin-bottom: 15px;\
+\'a0\'a0\'a0 font-size: {\field{\*\fldinst{HYPERLINK "tel:1.5"}}{\fldrslt \cf2 \ul \ulc2 1.5}}rem;\
+\'a0 \}\
+\
+\'a0 .card p \{\
+\'a0\'a0\'a0 font-size: 1rem;\
+\'a0\'a0\'a0 line-height: {\field{\*\fldinst{HYPERLINK "tel:1.4"}}{\fldrslt \cf2 \ul \ulc2 1.4}};\
+\'a0 \}\
+\
+\'a0 .btn \{\
+\'a0\'a0\'a0 background-color: #ffd{\field{\*\fldinst{HYPERLINK "tel:700"}}{\fldrslt \cf2 \ul \ulc2 700}};\
+\'a0\'a0\'a0 color: #{\field{\*\fldinst{HYPERLINK "tel:000"}}{\fldrslt \cf2 \ul \ulc2 000}};\
+\'a0\'a0\'a0 padding: 10px 20px;\
+\'a0\'a0\'a0 border: none;\
+\'a0\'a0\'a0 border-radius: 12px;\
+\'a0\'a0\'a0 font-weight: bold;\
+\'a0\'a0\'a0 cursor: pointer;\
+\'a0\'a0\'a0 margin-top: 15px;\
+\'a0\'a0\'a0 transition: transform {\field{\*\fldinst{HYPERLINK "tel:0.2"}}{\fldrslt \cf2 \ul \ulc2 0.2}}s;\
+\'a0 \}\
+\
+\'a0 .btn:hover \{\
+\'a0\'a0\'a0 transform: scale({\field{\*\fldinst{HYPERLINK "tel:1.05"}}{\fldrslt \cf2 \ul \ulc2 1.05}});\
+\'a0 \}\
+\
+\'a0 footer \{\
+\'a0\'a0\'a0 text-align: center;\
+\'a0\'a0\'a0 padding: 20px;\
+\'a0\'a0\'a0 background-color: rgba(0,0,0,{\field{\*\fldinst{HYPERLINK "tel:0.2"}}{\fldrslt \cf2 \ul \ulc2 0.2}});\
+\'a0 \}\
+</style>\
+</head>\
+<body>\
+\
+<header>\
+\'a0 <h1>AtlansSafe</h1>\
+\'a0 <nav>\
+\'a0\'a0\'a0 <a href="#">Dashboard</a>\
+\'a0\'a0\'a0 <a href="#">Perfil</a>\
+\'a0\'a0\'a0 <a href="#">Ajustes</a>\
+\'a0\'a0\'a0 <a href="#">Salir</a>\
+\'a0 </nav>\
+</header>\
+\
+<section class="dashboard">\
+\'a0 <!-- M\'fasica -->\
+\'a0 <div class="card">\
+\'a0\'a0\'a0 <h2>M\'fasica Inteligente</h2>\
+\'a0\'a0\'a0 <p>Reproducci\'f3n autom\'e1tica basada en tu estado de \'e1nimo, hora del d\'eda o clima.</p>\
+\'a0\'a0\'a0 <button class="btn">Abrir Reproductor</button>\
+\'a0 </div>\
+\
+\'a0 <!-- Clima -->\
+\'a0 <div class="card">\
+\'a0\'a0\'a0 <h2>Clima y Tr\'e1fico</h2>\
+\'a0\'a0\'a0 <p>Informaci\'f3n en tiempo real del clima y alertas de tr\'e1nsito para evitar trancas.</p>\
+\'a0\'a0\'a0 <button class="btn">Ver Detalles</button>\
+\'a0 </div>\
+\
+\'a0 <!-- C\'e1maras -->\
+\'a0 <div class="card">\
+\'a0\'a0\'a0 <h2>C\'e1maras del Mundo</h2>\
+\'a0\'a0\'a0 <p>Supervisa diferentes ubicaciones sin salir de casa, con feeds en vivo.</p>\
+\'a0\'a0\'a0 <button class="btn">Explorar C\'e1maras</button>\
+\'a0 </div>\
+\
+\'a0 <!-- Alertas -->\
+\'a0 <div class="card">\
+\'a0\'a0\'a0 <h2>Alertas Inteligentes</h2>\
+\'a0\'a0\'a0 <p>Notificaciones autom\'e1ticas de eventos importantes seg\'fan tus preferencias.</p>\
+\'a0\'a0\'a0 <button class="btn">Configurar Alertas</button>\
+\'a0 </div>\
+</section>\
+\
+<footer>\
+\'a0 &copy; {\field{\*\fldinst{HYPERLINK "tel:2026"}}{\fldrslt \cf2 \ul \ulc2 2026}} AtlansSafe. Todos los derechos reservados.\
+</footer>\
+\
+</body>\
+</html>}
